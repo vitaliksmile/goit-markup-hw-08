@@ -1,0 +1,36 @@
+.regular-customers__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.regular-customers__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  outline: none;
+  transition-property: border-color;
+  @include transition();
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:hover .regular-customers__icon,
+  &:focus .regular-customers__icon {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}
+
+.regular-customers__icon {
+  fill: #afb1b8;
+  transition-property: fill;
+  @include transition();
+  // transition-duration: 250ms;
+  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

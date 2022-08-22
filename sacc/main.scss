@@ -1,0 +1,47 @@
+/* колір основного тексту #212121 */
+
+/* вторичний колір тексту #757575 */
+
+/* колір акцент #2196F3 */
+
+/* колір заголовка героя #FFFFFF */
+
+/* колір фона 1 блок і підвалу #2F303A  */
+
+/* колір фона 2 блок #F5F5F5 */
+
+/* колір фона 3 блок #F5F4FA */
+
+@import './utils/variables';
+@import './utils/reset';
+@import './utils/global';
+/* Оформлення модального блока */
+@import './utils/mixin';
+@import './components-page-index/modal';
+/* Шапка */
+@import './components-page-index/header';
+/* Секція герой */
+@import './components-page-index/hero';
+/* Секція особливості */
+@import './components-page-index/features';
+/* Чим ми займаємся   */
+@import './components-page-index/we-do';
+/* Наша команда */
+@import './components-page-index/team';
+/* Наші клієнти */
+@import './components-page-index/regular-customers';
+/* Підвал сторінки footer з адрксою */
+@import './components-page-index/footer-address';
+/* Підвал сторінки соціалтні мережі */
+@import './components-page-index/footer-contacts';
+/* Підвал оформлення розсилка */
+@import './components-page-index/footer-mailing-list';
+
+/* ________________________________________ */
+/* Page-portfolio */
+/* Шапка-portfolio */
+@import './components-page-portfolio/header-portfolio';
+/* Filter list */
+@import './components-page-portfolio/filter';
+/* Проекти */
+@import './components-page-portfolio/projects';

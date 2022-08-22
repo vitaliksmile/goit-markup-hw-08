@@ -1,0 +1,29 @@
+.we-do {
+  padding-top: 0;
+
+  &__list {
+    display: flex;
+  }
+  &__item {
+    position: relative;
+  }
+  &__text {
+    position: absolute;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    padding: 27px 0;
+  }
+}
+.list .we-do__item + .we-do__item {
+  margin-left: 30px;
+}
