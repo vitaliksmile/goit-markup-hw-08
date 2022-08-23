@@ -8,9 +8,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 0;
   text-align: center;
+  @media screen and (min-width: $desktop) {
+    background-size: 1600px;
+    padding: 200px 0;
+  }
 
   &__title {
     color: var(--primary--white-color);
@@ -25,10 +28,16 @@
     margin-bottom: 30px;
     max-width: 696px;
     text-align: center;
+    @media screen and (min-width: $desktop) {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &__button {
-    padding: 10px 32px;
+    padding: 10px 24px;
+    // padding: 10px 32px;
     cursor: pointer;
     border: 0;
     font-weight: 700;
@@ -39,5 +48,9 @@
     border-radius: 4px;
     color: var(--primary--white-color);
     background-color: var(--accent-color);
+    @media screen and (min-width: $desktop) {
+      max-width: 696px;
+      padding: 10px 32px;
+    }
   }
 }

@@ -1,22 +1,47 @@
 .team {
   background-color: #f5f4fa;
 
-  &__list.list {
+  // &__list.list {
+  //   display: flex;
+  // }
+}
+
+.team__list {
+  @media screen and (min-width: $tablet) {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
-.team__list.list .team__item {
+.team__item {
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: white;
-}
-.list .team__item + .team__item {
-  margin-left: 30px;
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 8 * 15px) / 4);
+  }
 }
 
+// .list .team__item + .team__item {
+//   margin-left: 30px;
+// }
+.team__photo {
+  width: 100%;
+}
 .person {
   padding: 30px 0;
 

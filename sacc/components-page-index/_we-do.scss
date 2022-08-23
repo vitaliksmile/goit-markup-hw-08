@@ -1,4 +1,9 @@
 .we-do {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
   padding-top: 0;
 
   &__list {
