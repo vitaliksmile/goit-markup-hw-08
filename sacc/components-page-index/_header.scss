@@ -1,12 +1,6 @@
 .header {
   position: relative;
 }
-.header__box {
-  // justify-content: space-between;
-}
-// .header__box {
-//   justify-content: space-between;
-// }
 
 .header-link {
   display: none;
@@ -52,6 +46,9 @@
   position: relative;
   z-index: 2;
   background-color: transparent;
+  &:focus {
+    fill: #2196f3;
+  }
   @media screen and (min-width: $tablet) {
     display: none;
   }

@@ -86,6 +86,12 @@ body {
   margin-bottom: 50px;
 }
 
+.pictures {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Оформлення модального блока */
 .backdrop {
   position: fixed;
@@ -349,6 +355,9 @@ body {
   position: relative;
   z-index: 2;
   background-color: transparent;
+}
+.header__btn:focus {
+  fill: #2196f3;
 }
 @media screen and (min-width: 767.99px) {
   .header__btn {
@@ -621,17 +630,39 @@ body {
 /* Секція герой */
 .hero {
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 118px 0;
+  letter-spacing: 0.06em;
   text-align: center;
+  padding: 118px 0;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob@2x.jpg);
+  }
+}
+@media screen and (min-width: 767.99px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab.jpg);
+  }
+}
+@media screen and (min-width: 767.99px) and (min-device-pixel-ratio: 2), screen and (min-width: 767.99px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767.99px) and (min-resolution: 192dpi), screen and (min-width: 767.99px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-tab@2x.jpg);
+  }
 }
 @media screen and (min-width: 1199.99px) {
   .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-size: 1600px;
     padding: 200px 0;
+  }
+}
+@media screen and (min-width: 1199.99px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199.99px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1199.99px) and (min-resolution: 192dpi), screen and (min-width: 1199.99px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero@2x.jpg);
   }
 }
 .hero__title {
