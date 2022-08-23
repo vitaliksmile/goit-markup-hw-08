@@ -73,6 +73,10 @@
   align-items: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .contact {
