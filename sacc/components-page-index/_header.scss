@@ -2,61 +2,93 @@
   position: relative;
 }
 .header__box {
-  justify-content: space-between;
+  // justify-content: space-between;
 }
+// .header__box {
+//   justify-content: space-between;
+// }
 
 .header-link {
-  // display: none;
+  display: none;
   width: 100%;
-  display: flex;
-  @media screen and (max-width: $tablet) {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
 
-    height: 100vh;
-    background-color: white;
-    padding: 48px 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    flex-direction: column;
-    justify-content: space-between;
+  height: 100vh;
+  background-color: white;
+  padding: 48px 40px;
+
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 2;
+
+  &.is-open {
+    display: flex;
   }
   @media screen and (min-width: $tablet) {
+    display: none;
     justify-content: space-between;
     align-items: center;
   }
 }
 
+.header-new {
+  display: none;
+  @media screen and(min-width:$tablet) {
+    display: flex;
+  }
+}
+
 .header__btn {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  margin-left: auto;
   border: none;
-  // padding: 10px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   position: relative;
   z-index: 2;
   background-color: transparent;
-  border-radius: 5px;
   @media screen and (min-width: $tablet) {
     display: none;
   }
+}
+.header__btn .menu-btn__menu {
+  display: none;
+}
+
+.header__btn.is-open .menu-btn__menu {
+  display: block;
+}
+
+.header__btn.is-open .menu-btn__close {
+  display: none;
 }
 
 .flex {
   display: flex;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .contact {
   display: flex;
+  justify-content: flex-end;
   flex-direction: column-reverse;
   @media screen and(min-width:$tablet) {
+    margin-left: 96px;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
   @media screen and (min-width: $desktop) {
+    margin-left: 315px;
     flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -146,7 +178,6 @@
     margin-left: 88px;
   }
   @media screen and (min-width: $desktop) {
-    margin-left: 93px;
   }
 
   .nav__item {
